@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package mecab_server;
+
+service MeCabServer {
+  rpc Parse(Text) returns (Text) {}
+}
+
+message Text {
+  string text = 1;
+}
